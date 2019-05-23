@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import FirebaseAuth
 
 class ViewController: UIViewController {
 
@@ -15,6 +16,19 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
 
-
+    @IBAction func logout(_ sender: Any) {
+        do {
+            try Auth.auth().signOut()
+        }
+        catch let signOutError as NSError {
+            print("Error signing out: %@", signOutError)
+        }
+        
+        let storyBoard = UIStoryboard(name: "Main", bundle: nil)
+        let initial = storyBoard.instantiateInitialViewController()
+        UIApplication.shared.keyWindow?.rootViewController = initial
+        
+    }
+    
 }
 
