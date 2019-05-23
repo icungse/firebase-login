@@ -7,5 +7,6 @@ target 'Login Firebase' do
 
   # Pods for Login Firebase
   pod 'Firebase/Core'
+  pod 'Firebase/Auth'
 
 end

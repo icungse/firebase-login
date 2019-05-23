@@ -185,6 +185,9 @@
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="100" id="Los-nk-dn7"/>
                                 </constraints>
                                 <state key="normal" title="Signup"/>
+                                <connections>
+                                    <action selector="signUp:" destination="aJp-ta-K3U" eventType="touchUpInside" id="8se-Ea-VG2"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -213,6 +216,9 @@
                         <viewLayoutGuide key="safeArea" id="SK6-02-BgW"/>
                     </view>
                     <connections>
+                        <outlet property="emailTextField" destination="uCM-qO-bOU" id="roX-qE-Bjn"/>
+                        <outlet property="passwordConfirmationTextField" destination="AuM-H3-ec2" id="3ma-P9-JAc"/>
+                        <outlet property="passwordTextField" destination="UUq-5Z-EiO" id="4PH-ty-PnS"/>
                         <segue destination="BYZ-38-t0r" kind="presentation" id="XWN-fR-5vK"/>
                     </connections>
                 </viewController>
@@ -223,7 +229,6 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Login_Firebase" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
@@ -232,6 +237,7 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2308" y="27"/>
         </scene>
