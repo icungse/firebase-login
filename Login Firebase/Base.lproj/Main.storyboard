@@ -32,32 +32,31 @@
                                     <segue destination="aJp-ta-K3U" kind="show" id="GXC-bN-PnM"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Simple Login App" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AuS-7S-MUf">
-                                <rect key="frame" x="49" y="234" width="277" height="45"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="37"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Using Firebase" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BXq-De-wWz">
                                 <rect key="frame" x="104" y="299" width="167" height="32"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="26"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Simple Login App" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AuS-7S-MUf">
+                                <rect key="frame" x="48.5" y="232" width="277.5" height="45"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="37"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="AuS-7S-MUf" firstAttribute="centerX" secondItem="hHg-nJ-WGG" secondAttribute="centerX" id="7Rp-Ng-EvX"/>
+                            <constraint firstItem="AuS-7S-MUf" firstAttribute="centerX" secondItem="hHg-nJ-WGG" secondAttribute="centerX" constant="-0.5" id="7Rp-Ng-EvX"/>
                             <constraint firstItem="VMa-4Z-Xpm" firstAttribute="centerX" secondItem="jcY-Ar-RuQ" secondAttribute="centerX" id="8Q6-D5-acR"/>
-                            <constraint firstItem="BXq-De-wWz" firstAttribute="top" secondItem="AuS-7S-MUf" secondAttribute="bottom" constant="20" id="D8D-dN-MIs"/>
+                            <constraint firstItem="BXq-De-wWz" firstAttribute="top" secondItem="AuS-7S-MUf" secondAttribute="bottom" constant="22" id="D8D-dN-MIs"/>
                             <constraint firstItem="jcY-Ar-RuQ" firstAttribute="top" secondItem="VMa-4Z-Xpm" secondAttribute="bottom" constant="13" id="EaF-Ge-KCT"/>
-                            <constraint firstItem="AuS-7S-MUf" firstAttribute="centerX" secondItem="BXq-De-wWz" secondAttribute="centerX" id="HO5-B1-BFo"/>
-                            <constraint firstItem="AuS-7S-MUf" firstAttribute="centerX" secondItem="VMa-4Z-Xpm" secondAttribute="centerX" id="Ls6-BH-GZN"/>
+                            <constraint firstItem="AuS-7S-MUf" firstAttribute="centerX" secondItem="BXq-De-wWz" secondAttribute="centerX" constant="-0.5" id="HO5-B1-BFo"/>
+                            <constraint firstItem="AuS-7S-MUf" firstAttribute="centerX" secondItem="VMa-4Z-Xpm" secondAttribute="centerX" constant="-0.5" id="Ls6-BH-GZN"/>
                             <constraint firstItem="VMa-4Z-Xpm" firstAttribute="leading" secondItem="tc3-Ez-kdP" secondAttribute="leading" constant="137" id="PRZ-6E-AVx"/>
                             <constraint firstItem="VMa-4Z-Xpm" firstAttribute="leading" secondItem="jcY-Ar-RuQ" secondAttribute="leading" id="VtB-Ng-rhE"/>
-                            <constraint firstItem="AuS-7S-MUf" firstAttribute="leading" secondItem="tc3-Ez-kdP" secondAttribute="leading" constant="49" id="lG2-dS-9wx"/>
                             <constraint firstItem="VMa-4Z-Xpm" firstAttribute="top" secondItem="BXq-De-wWz" secondAttribute="bottom" constant="93" id="yiX-Ij-5zQ"/>
-                            <constraint firstItem="AuS-7S-MUf" firstAttribute="top" secondItem="tc3-Ez-kdP" secondAttribute="top" constant="170" id="z8P-fv-I4g"/>
+                            <constraint firstItem="AuS-7S-MUf" firstAttribute="top" secondItem="tc3-Ez-kdP" secondAttribute="top" constant="168" id="z8P-fv-I4g"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="tc3-Ez-kdP"/>
                     </view>
@@ -242,15 +241,11 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NIq-Y3-KQn">
                                 <rect key="frame" x="311" y="20" width="48" height="30"/>
                                 <state key="normal" title="Logout"/>
-                                <connections>
-                                    <action selector="logout:" destination="BYZ-38-t0r" eventType="touchUpInside" id="OSw-o9-5xm"/>
-                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="NIq-Y3-KQn" secondAttribute="trailing" constant="16" id="03S-RL-PD7"/>
-                            <constraint firstItem="NIq-Y3-KQn" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="6Tk-OE-BBY" secondAttribute="leading" symbolic="YES" id="7zH-gM-K3e"/>
                             <constraint firstItem="NIq-Y3-KQn" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="MMe-sd-U7P"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
