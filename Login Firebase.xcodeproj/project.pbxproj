@@ -12,6 +12,10 @@
 		FE94EA91229718B40064AD82 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FE94EA8F229718B40064AD82 /* Main.storyboard */; };
 		FE94EA93229718B50064AD82 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FE94EA92229718B50064AD82 /* Assets.xcassets */; };
 		FE94EA96229718B50064AD82 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FE94EA94229718B50064AD82 /* LaunchScreen.storyboard */; };
+		FE94EA9F229719570064AD82 /* StartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE94EA9E229719570064AD82 /* StartViewController.swift */; };
+		FE94EAA1229719600064AD82 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE94EAA0229719600064AD82 /* LoginViewController.swift */; };
+		FE94EAA32297196B0064AD82 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE94EAA22297196B0064AD82 /* SignUpViewController.swift */; };
+		FE94EAA522971FA70064AD82 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = FE94EAA422971FA70064AD82 /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +26,10 @@
 		FE94EA92229718B50064AD82 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FE94EA95229718B50064AD82 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FE94EA97229718B50064AD82 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FE94EA9E229719570064AD82 /* StartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartViewController.swift; sourceTree = "<group>"; };
+		FE94EAA0229719600064AD82 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		FE94EAA22297196B0064AD82 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
+		FE94EAA422971FA70064AD82 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +62,26 @@
 		FE94EA8A229718B40064AD82 /* Login Firebase */ = {
 			isa = PBXGroup;
 			children = (
+				FE94EA9D2297192D0064AD82 /* Controller */,
 				FE94EA8B229718B40064AD82 /* AppDelegate.swift */,
-				FE94EA8D229718B40064AD82 /* ViewController.swift */,
 				FE94EA8F229718B40064AD82 /* Main.storyboard */,
 				FE94EA92229718B50064AD82 /* Assets.xcassets */,
 				FE94EA94229718B50064AD82 /* LaunchScreen.storyboard */,
 				FE94EA97229718B50064AD82 /* Info.plist */,
+				FE94EAA422971FA70064AD82 /* GoogleService-Info.plist */,
 			);
 			path = "Login Firebase";
+			sourceTree = "<group>";
+		};
+		FE94EA9D2297192D0064AD82 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				FE94EA9E229719570064AD82 /* StartViewController.swift */,
+				FE94EAA0229719600064AD82 /* LoginViewController.swift */,
+				FE94EAA22297196B0064AD82 /* SignUpViewController.swift */,
+				FE94EA8D229718B40064AD82 /* ViewController.swift */,
+			);
+			path = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -123,6 +143,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FE94EA96229718B50064AD82 /* LaunchScreen.storyboard in Resources */,
+				FE94EAA522971FA70064AD82 /* GoogleService-Info.plist in Resources */,
 				FE94EA93229718B50064AD82 /* Assets.xcassets in Resources */,
 				FE94EA91229718B40064AD82 /* Main.storyboard in Resources */,
 			);
@@ -135,8 +156,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FE94EAA1229719600064AD82 /* LoginViewController.swift in Sources */,
 				FE94EA8E229718B40064AD82 /* ViewController.swift in Sources */,
 				FE94EA8C229718B40064AD82 /* AppDelegate.swift in Sources */,
+				FE94EA9F229719570064AD82 /* StartViewController.swift in Sources */,
+				FE94EAA32297196B0064AD82 /* SignUpViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
