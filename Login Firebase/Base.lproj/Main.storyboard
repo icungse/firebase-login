@@ -105,6 +105,9 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2b3-R3-Rlk">
                                 <rect key="frame" x="137" y="415" width="101" height="30"/>
                                 <state key="normal" title="Login"/>
+                                <connections>
+                                    <action selector="login:" destination="JP2-tL-uY2" eventType="touchUpInside" id="JPc-GL-w5A"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -128,7 +131,9 @@
                         <viewLayoutGuide key="safeArea" id="JIU-8z-7ad"/>
                     </view>
                     <connections>
-                        <segue destination="BYZ-38-t0r" kind="presentation" id="VbM-sg-CA6"/>
+                        <outlet property="emailTextField" destination="zEM-Q8-s30" id="8XW-YX-Vn9"/>
+                        <outlet property="passwordTextField" destination="4O4-WS-2gE" id="pGh-XD-SNz"/>
+                        <segue destination="BYZ-38-t0r" kind="presentation" identifier="login" id="VbM-sg-CA6"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="IJQ-BP-mI0" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -219,7 +224,7 @@
                         <outlet property="emailTextField" destination="uCM-qO-bOU" id="roX-qE-Bjn"/>
                         <outlet property="passwordConfirmationTextField" destination="AuM-H3-ec2" id="3ma-P9-JAc"/>
                         <outlet property="passwordTextField" destination="UUq-5Z-EiO" id="4PH-ty-PnS"/>
-                        <segue destination="BYZ-38-t0r" kind="presentation" id="XWN-fR-5vK"/>
+                        <segue destination="BYZ-38-t0r" kind="presentation" identifier="signup" id="XWN-fR-5vK"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cJh-oX-d45" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -261,6 +266,6 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="XWN-fR-5vK"/>
+        <segue reference="VbM-sg-CA6"/>
     </inferredMetricsTieBreakers>
 </document>
