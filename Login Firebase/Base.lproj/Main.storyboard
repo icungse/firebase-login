@@ -63,7 +63,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="RDa-uM-IW7"/>
                     <connections>
-                        <segue destination="BYZ-38-t0r" kind="presentation" id="gBi-gk-ano"/>
+                        <segue destination="BYZ-38-t0r" kind="presentation" identifier="alreadyLogin" id="gBi-gk-ano"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ctQ-uB-F1O" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -266,6 +266,6 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="VbM-sg-CA6"/>
+        <segue reference="gBi-gk-ano"/>
     </inferredMetricsTieBreakers>
 </document>
